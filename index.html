@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Astronaut</title>
+	<link rel="icon" type="image/x-icon" href="img/favicon.png">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<section class="header">
+	<nav>
+		<a href="index.html"><img src="img/logo.png"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+
+			<ul>
+				<li><a href="index.html" class="active">HOME</a></li>
+				<li><a href="about.html">ABOUT</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+
+<div class="text-box">
+	<h1>Astronaut</h1>
+	<p>“If it has all four tires and gets you from point A to point B then it's a car”<br>- Takumi Fujiwara</p>
+	<a href="about.html" class="hero-btn">Visit Us To learn More</a>
+</div>	
+</section>
+
+<!-------- Spaceraft -------->
+
+<section class="spacecraft">
+	<h1>Spacecrafts</h1>
+	<p>A spacecraft is a vehicle that is designed to fly in outer space. <br>A type of artificial satellite, spacecraft are used for a variety of purposes, <br>including communications, Earth observation, meteorology, navigation, <br>space colonization, planetary exploration, and transportation of humans and cargo.</p>
+
+	<div class="row">
+		<div class="spacecraft-col">
+			<img src="img/spacecraft/lrv.jpg">
+			<div class="layer">
+				<h3>Lunar Roving Vehicle</h3>
+			</div>
+		</div>
+		<div class="spacecraft-col">
+			<img src="img/spacecraft/lunarlander.webp">
+			<div class="layer">
+				<h3>Lunar Lander</h3>
+			</div>
+		</div>
+		<div class="spacecraft-col">
+			<img src="img/spacecraft/spaceshuttle.png">
+			<div class="layer">
+				<h3>Space Shuttle</h3>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-------- Planet -------->
+
+<section class="planet">
+	<h1>Planets/Satellite</h1>
+	<p>A planet is a celestial body that is in orbit around the Sun, <br>has sufficient mass for its self-gravity to overcome <br>rigid body forces so that it assumes a hydrostatic equilibrium <br>(nearly round) shape, and has cleared the neighbourhood around its orbit.</p>
+
+	<div class="row">
+		<div class="planet-col">
+			<img src="img/planet/mars.webp">
+			<h3>Mars</h3>
+			<p>Mars is the fourth planet and the furthest terrestrial planet from the Sun. The reddish color of its surface is due to finely grained iron(III) oxide dust in the soil, giving it the nickname "the Red Planet".</p>
+		</div>
+		<div class="planet-col">
+			<img src="img/planet/earth.webp">
+			<h3>Earth</h3>
+			<p>Earth is the third planet from the Sun and the only place known in the universe where life has originated and found habitability. Earth is the only planet to sustain liquid surface water, with ocean water extending over 70.8% of the planet, making it an ocean world.</p>
+		</div>
+		<div class="planet-col">
+			<img src="img/planet/moon.jpg">
+			<h3>Moon</h3>
+			<p>The Moon is Earth's only natural satellite. Its diameter is about one-quarter of Earth's, making it the fifth largest satellite in the Solar System and the largest and most massive relative to its parent planet. It is larger than all known dwarf planets in the Solar System.</p>
+		</div>
+	</div>
+</section>
+
+<!-------- Visitors -------->
+<section class="visitor">
+	<h1>Visitors Feedback</h1>
+	<p>Their Feedback and Ratings.</p>
+
+	<div class="row">
+		<div class="visitor-col">
+			<img src="img/v1.jpg">
+			<div>
+				<p>とても価値があります。惑星や天文学に関する知識が広がりました。間違いなくサポートに値します。</p>
+				<h3>Gelo Ishigami</h3>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</div>
+		</div>
+		<div class="visitor-col">
+			<img src="img/v2.jpg">
+			<div>
+				<p>나는 그들이 가르치는 방식을 좋아합니다. 나는 많이 배웠다 . 그만한 가치가 있습니다. 팀과 이것을 만든 사람들을 사랑하십시오. 여러분, 많은 도움이 됩니다.</p>
+				<h3>Jay Sung</h3>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-------- Call To Action -------->
+
+<section class="cta">
+	<h1>Apply Now To Learn More.</h1>
+	<a href="contact.html" class="hero-btn">APPLY</a>
+</section>
+
+<!-------- Footer -------->
+
+<section class="footer">
+	<p>&copy; 2023 www.astronaut.com</p>
+	<p>Lupac, Boac, Marinduque, Philippines</p>
+</section>
+
+<!-------- JavaScript for Toggle Menu -------->
+<script>
+	var	navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0"
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px"
+	}
+</script>
+
+</body>
+</html>
